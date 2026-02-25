@@ -9,6 +9,11 @@ const ENABLE_PORT_FALLBACK = !process.env.PORT;
 // Serve static files from 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Some browsers request /favicon.ico by default. Redirect to our SVG favicon.
+app.get('/favicon.ico', (req, res) => {
+    res.redirect(302, '/favicon.svg');
+});
+
 // Serve HTML from 'views' directory
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));

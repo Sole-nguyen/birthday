@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gCake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb3c7"/>
+      <stop offset="1" stop-color="#ff6b9d"/>
+    </linearGradient>
+    <linearGradient id="gIcing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8f0"/>
+      <stop offset="1" stop-color="#ffe5ec"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background bubble to match site theme -->
+  <circle cx="32" cy="32" r="30" fill="#fff0f5"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#ffc2d1" stroke-width="2"/>
+
+  <!-- plate -->
+  <ellipse cx="32" cy="49" rx="20" ry="6" fill="#ffffff" stroke="#e8b4b8" stroke-width="1.5"/>
+
+  <!-- cake base -->
+  <rect x="16" y="30" width="32" height="18" rx="6" fill="url(#gCake)" stroke="#c94c7a" stroke-width="1.5"/>
+
+  <!-- icing -->
+  <path d="M18 32c3 0 3-3 6-3s3 3 6 3 3-3 6-3 3 3 6 3 3-3 6-3v6H18z" fill="url(#gIcing)" stroke="#e8b4b8" stroke-width="1"/>
+
+  <!-- candle -->
+  <rect x="30.5" y="18" width="3" height="10" rx="1.5" fill="#a8d5ba" stroke="#4a3f35" stroke-width="0.8"/>
+
+  <!-- flame -->
+  <path d="M32 13c2 2 2.5 4.2 0 6.2-2.5-2-2-4.2 0-6.2z" fill="#ffd166" stroke="#e09f3e" stroke-width="0.8"/>
+
+  <!-- sprinkles -->
+  <circle cx="23" cy="36" r="1.2" fill="#ffd166"/>
+  <circle cx="28" cy="39" r="1.2" fill="#a8d5ba"/>
+  <circle cx="34" cy="37" r="1.2" fill="#ffc2d1"/>
+  <circle cx="39" cy="40" r="1.2" fill="#d4a574"/>
+  <circle cx="42" cy="36" r="1.2" fill="#ff6b9d"/>
+</svg>
