@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Thảo Ly 🌸</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Petal Canvas Background -->
+    <canvas id="petalCanvas"></canvas>
+    
+    <!-- Click Bloom Canvas -->
+    <canvas id="bloomCanvas"></canvas>
+
+    <!-- Audio Player -->
+    <div class="audio-player" id="audioPlayer">
+        <button class="audio-btn" id="audioBtn" aria-label="Toggle Music">
+            <svg class="audio-icon play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+            <svg class="audio-icon mute hidden" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.34 2.93L2.93 4.34 7.29 8.7 7 9H3v6h4l5 5v-6.59l4.18 4.18c-.65.49-1.38.88-2.18 1.11v2.06c1.34-.3 2.57-.92 3.61-1.75l2.05 2.05 1.41-1.41L4.34 2.93zM10 15.17L7.83 13H5v-2h2.83l.88-.88L10 11.41v3.76zM19 12c0 .82-.15 1.61-.41 2.34l1.53 1.53c.56-1.17.88-2.48.88-3.87 0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zm-7-8l-1.88 1.88L12 7.76zm4.5 8c0-1.77-1.02-3.29-2.5-4.03v1.79l2.48 2.48c.01-.08.02-.16.02-.24z"/>
+            </svg>
+        </button>
+        <div class="audio-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Landing Section -->
+    <section class="landing-section" id="landing">
+        <div class="landing-content">
+            <div class="floral-decoration top-left"></div>
+            <div class="floral-decoration top-right"></div>
+            
+            <div class="title-wrapper">
+                <span class="subtitle">✿ Gửi tặng người đặc biệt ✿</span>
+                <h1 class="main-title">Happy Birthday</h1>
+                <h2 class="name-title">Thảo Ly</h2>
+                <div class="title-underline">
+                    <span class="flower-icon">🌸</span>
+                </div>
+            </div>
+            
+            <p class="landing-hint">Click vào màn hình để tạo những bông hoa</p>
+            
+            <button class="enter-btn" id="enterBtn">
+                <span class="btn-text">Mở Thiệp</span>
+                <span class="btn-petals">
+                    <i>🌷</i><i>🌹</i><i>🌺</i>
+                </span>
+            </button>
+            
+            <div class="floral-decoration bottom-left"></div>
+            <div class="floral-decoration bottom-right"></div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message-section hidden" id="messageSection">
+        <div class="message-container">
+            <!-- Floral Frame -->
+            <div class="floral-frame">
+                <div class="frame-corner corner-tl"></div>
+                <div class="frame-corner corner-tr"></div>
+                <div class="frame-corner corner-bl"></div>
+                <div class="frame-corner corner-br"></div>
+                <div class="frame-side side-top"></div>
+                <div class="frame-side side-bottom"></div>
+                <div class="frame-side side-left"></div>
+                <div class="frame-side side-right"></div>
+                
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="heart-icon">💕</span>
+                        <h3>Happy birthdayyyyyyy!!!!!!!!!</h3>
+                        <span class="heart-icon">💕</span>
+                    </div>
+                    
+                    <div class="message-body">
+                        <p class="message-text">
+                            <span class="first-letter">N</span>hân ngày sinh nhật của Thảo Ly, toai muốn gửi đến bạn những lời chúc tốt đẹp nhất.
+                        </p>
+                        <p class="message-text">
+                            Chúc Thảo Ly luôn xinh đẹp, rạng rỡ, học giỏi, lụm học bổng đều đều nhé!
+                            Mong là Thảo Ly sẽ luôn dui dẻ, rạng ngời, cười nhiều hơn, áp lực giải quyết nhanh chóng hơn. 
+                            Nchung là mong mọi điều tốt đẹp nhất sẽ đến với bẹn trong độ tuổi u20 này nhee!
+                        </p>
+                        <p class="message-text">
+                            Wishing you a birthday that is as wonderful and inspiring as you are. 
+                            Thank you for being such a positive influence in my life and for always encouraging me to reach higher. 
+                            I hope your special day is filled with love, laughter, and the company of those who cherish you most.
+                        </p>
+                        <p class="message-signature">
+                            Với tất cả tâm huyết,<br>
+                            <span class="signature-name">Nhất đẹp trai số 1 VN</span>
+                        </p>
+                    </div>
+                    
+                    <div class="message-footer">
+                        <div class="cake-animation">
+                            <span class="cake">🎂</span>
+                            <span class="candles">🕯️🕯️🕯️</span>
+                        </div>
+                        <p class="birthday-date">28 • 02 • 2026</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="back-btn" id="backBtn">
+                <span>← Quay lại</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Floating Flowers Decoration -->
+    <div class="floating-flowers">
+        <div class="flower f1">🌸</div>
+        <div class="flower f2">🌺</div>
+        <div class="flower f3">🌷</div>
+        <div class="flower f4">🌹</div>
+        <div class="flower f5">🌼</div>
+        <div class="flower f6">💮</div>
+        <div class="flower f7">🏵️</div>
+        <div class="flower f8">🌻</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/petals.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
