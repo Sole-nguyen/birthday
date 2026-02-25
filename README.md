@@ -1,4 +1,4 @@
-# 🌸 Happy Birthday Thảo Ly - Garden of Love
+# 🌸 Happy Birthday Code - Garden of Love
 
 Website chúc mừng sinh nhật nghệ thuật với hiệu ứng hoa đẹp mắt.
 
@@ -32,7 +32,7 @@ npm start
 
 3. **Mở trình duyệt:**
 ```
-http://localhost:3000
+http://localhost:3001
 ```
 
 ### Development mode (tự động reload):
@@ -43,7 +43,7 @@ npm run dev
 ## 📁 Cấu trúc thư mục
 
 ```
-birthday-thaoly/
+birthday/
 ├── app.js              # Express server
 ├── package.json        # Dependencies
 ├── public/             # Static files
@@ -57,34 +57,6 @@ birthday-thaoly/
 └── views/
     └── index.html      # Trang chính
 ```
-
-## 🎵 Thêm nhạc nền
-
-Để thêm nhạc nền, đặt file nhạc vào:
-```
-public/audio/background-music.mp3
-```
-
-**Gợi ý:** Nhạc piano nhẹ nhàng hoặc nhạc không lời romantic.
-
-## 🎨 Tùy chỉnh
-
-### Đổi tên người nhận
-Mở `views/index.html` và thay đổi "Thảo Ly" thành tên mong muốn.
-
-### Đổi màu sắc
-Mở `public/css/style.css` và chỉnh sửa CSS variables:
-```css
-:root {
-    --primary-pink: #ff6b9d;
-    --soft-pink: #ffc2d1;
-    --deep-rose: #c94c7a;
-    /* ... */
-}
-```
-
-### Chỉnh lời chúc
-Mở `views/index.html` và tìm phần `.message-body` để sửa nội dung.
 
 ## 🖼️ Preview
 
