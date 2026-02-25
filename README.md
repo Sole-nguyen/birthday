@@ -32,8 +32,19 @@ npm start
 
 3. **Mở trình duyệt:**
 ```
-http://localhost:3001
+http://localhost:3000
 ```
+
+## ☁️ Deploy lên Render
+
+1. Push code lên GitHub.
+2. Trên Render: **New +** → **Web Service** → chọn repo.
+3. Cấu hình:
+    - **Build Command**: `npm install`
+    - **Start Command**: `npm start`
+4. Render sẽ tự set biến môi trường `PORT` (app đã lắng nghe đúng cổng này).
+
+Gợi ý health check (nếu cần): truy cập `/healthz` sẽ trả về `ok`.
 
 ### Development mode (tự động reload):
 ```bash
